@@ -1,0 +1,4 @@
+[
+  { "firstName": "John", "lastName": "Doe", "postalCode": "12345", "type": "valid" },
+  { "firstName": "John", "lastName": "Doe", "postalCode": "", "type": "missingPostal" }
+]
