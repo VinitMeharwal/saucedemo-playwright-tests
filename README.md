@@ -1,8 +1,6 @@
 # Swag Labs Playwright Test Automation
 
 ## Overview
-Hi,
-
 This project demonstrates automated end-to-end testing of the SauceDemo e-commerce website (https://www.saucedemo.com/) using Playwright and TypeScript. It covers login, add-to-cart, and checkout flows with both positive and negative test cases, following best practices such as the Page Object Model and data-driven testing.
 
 
