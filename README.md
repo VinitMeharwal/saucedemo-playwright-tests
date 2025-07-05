@@ -54,6 +54,7 @@ on:
     branches: [ main, master ]  # Auto-trigger on push to main/master
   pull_request:
     branches: [ main, master ]  # Auto-trigger on PR to main/master
+```
 
 ## 📄 GitHub Pages: Hosted Test Report
 
