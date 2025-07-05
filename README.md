@@ -41,6 +41,36 @@ This project demonstrates automated end-to-end testing of the SauceDemo e-commer
 5. **Run in CI:**
    - See `.github/workflows/playwright.yml` for GitHub Actions pipeline.
 
+## 🔄 CI/CD Pipeline Trigger
+
+This project uses **GitHub Actions** for continuous integration and deployment.
+
+The pipeline is triggered automatically in the following cases:
+
+```yaml
+on:
+  workflow_dispatch:            # Manual trigger via GitHub UI
+  push:
+    branches: [ main, master ]  # Auto-trigger on push to main/master
+  pull_request:
+    branches: [ main, master ]  # Auto-trigger on PR to main/master
+
+## 📄 GitHub Pages: Hosted Test Report
+
+The latest Playwright HTML test report is automatically published after each successful GitHub Actions run.
+
+🔗 **Live Report:**  
+👉 [https://vinitmeharwal.github.io/saucedemo-playwright-tests/](https://vinitmeharwal.github.io/saucedemo-playwright-tests/)
+
+This report reflects:
+
+- The latest test run from the main branch
+- Full trace of passed/failed/skipped tests
+- Embedded screenshots, logs, and metadata
+
+> The deployment is handled via [`peaceiris/actions-gh-pages`](https://github.com/peaceiris/actions-gh-pages) using GitHub Actions.
+
+
 ## Test Scenarios
 
 See `TEST_SCENARIOS.md` for a list of covered scenarios and their prioritization.
